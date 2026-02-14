@@ -2,8 +2,8 @@
  * Configuração Global
  */
 const CONFIG = {
-    whatsappNumber: "5511965996108",
-    defaultMessage: "Olá, estou em {CIDADE} e quero saber mais sobre o aparelho ortodôntico."
+    whatsappNumber: "5519992779938",
+    defaultMessage: "Olá! Vi o anúncio em {CIDADE} e quero minha Avaliação e Instalação Grátis do Aparelho!"
 };
 
 /**
@@ -32,6 +32,7 @@ function updateWhatsAppLinks() {
     links.forEach(link => {
         link.href = getWhatsAppLink(city);
         link.target = "_blank"; // Abre em nova aba
+        link.rel = "noopener noreferrer"; // Segurança e Performance
     });
 }
 
