@@ -2,7 +2,7 @@
  * Configuração Global
  */
 const CONFIG = {
-    whatsappNumber: "5519992779938",
+    whatsappNumber: "5511965996108",
     defaultMessage: "Olá! Vi o anúncio em {CIDADE} e quero minha Avaliação e Instalação Grátis do Aparelho!"
 };
 
