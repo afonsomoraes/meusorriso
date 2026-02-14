@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://afonsomoraes.github.io/meusorriso/sitemap.xml

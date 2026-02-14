@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aparelho Dentário em {{CITY_NAME}} | Clínica Meu Sorriso</title>
+    <meta name="description"
+        content="Conquiste o sorriso dos seus sonhos em {{CITY_NAME}}. Aparelhos modernos, custo zero inicial e atendimento humanizado. Agende sua avaliação!">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00A8B5', // Turquesa mais vibrante/popular
+                        secondary: '#004455', // Azul base
+                        accent: '#FF6B00', // Laranja forte para ofertas (Varejo/Popular)
+                        light: '#F8F9FA',
+                        highlight: '#FFD700', // Amarelo Ouro
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        heading: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-color: #f0fdf4;
+            /* Fundo claro e limpo */
+            /* Overlay suave para legibilidade se tiver imagem */
+        }
+
+        .offer-badge {
+            animation: pulse 2s infinite;
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-TDKTS5WM');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDKTS5WM" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="logo font-heading font-black text-2xl text-secondary tracking-tight">
+                Meu Sorriso
+            </div>
+            <a href="#" target="_blank"
+                class="whatsapp-link bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg font-bold text-sm flex items-center gap-2 shadow-md uppercase">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.506-.669-.516l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.017-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                </svg>
+                Agendar no WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Popular Style: Clean, Clear, High Energy) -->
+    <section class="bg-gradient-to-b from-blue-50 to-white pt-12 pb-16 px-4">
+        <div class="container mx-auto max-w-6xl grid md:grid-cols-2 gap-8 items-center">
+
+            <!-- Text Content -->
+            <div class="text-center md:text-left z-10">
+                <div
+                    class="inline-block bg-accent hover:bg-orange-600 text-white text-base font-bold px-6 py-2 rounded-full mb-6 uppercase tracking-wide transform -rotate-1 shadow-lg offer-badge">
+                    💸 Custo Zero Inicial
+                </div>
+                <!-- Headline Gigante e Direta -->
+                <h1 class="font-heading font-black text-3xl md:text-5xl mb-6 text-gray-900 leading-tight">
+                    Conquiste seu <span class="text-primary bg-blue-50 px-2 rounded">Sorriso Novo</span> aqui em
+                    {{CITY_NAME}}
+                </h1>
+
+                <!-- Benefícios Rápidos -->
+                <p class="text-lg text-gray-700 mb-8 font-medium">
+                    <span class="block mb-2">✅ Aparelho Estético ou Metálico</span>
+                    <span class="block mb-2">✅ Parcelas que cabem no bolso</span>
+                    <span class="block">✅ Atendimento rápido e fácil</span>
+                </p>
+
+                <div class="flex flex-col gap-3">
+                    <a href="#" target="_blank"
+                        class="whatsapp-link bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl text-xl transition transform hover:scale-105 uppercase flex justify-center items-center gap-2 border-b-4 border-green-700">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.506-.669-.516l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.017-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                        </svg>
+                        Agendar minha avaliação
+                    </a>
+                    <p class="text-xs text-gray-500 text-center font-semibold uppercase tracking-wider">
+                        Vagas Limitadas para esta semana
+                    </p>
+                </div>
+            </div>
+
+            <!-- Image/Visual -->
+            <div class="relative">
+                <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                    <!-- Usando uma imagem direta e clara -->
+                    <img src="../assets/img/hero-bg.jpg" alt="Paciente Feliz Sorrindo com Aparelho" width="800"
+                        height="600" loading="eager" fetchpriority="high"
+                        class="object-cover w-full h-full transform hover:scale-105 transition duration-500">
+                </div>
+                <!-- Float Badge -->
+                <div class="absolute -bottom-6 -left-4 bg-white p-4 rounded-xl shadow-lg border-l-4 border-primary">
+                    <p class="font-bold text-gray-800 text-lg">⭐ Nota 5/5</p>
+                    <p class="text-sm text-gray-500">Avaliado pelos pacientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta Destacada (Estilo Cupom/Varejo) -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div
+                class="max-w-4xl mx-auto bg-yellow-50 border-2 border-yellow-400 rounded-xl p-8 shadow-lg relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-yellow-900 font-bold px-4 py-1 text-xs uppercase">
+                    Oferta Especial
+                </div>
+                <div class="text-center mb-8">
+                    <h2 class="font-heading text-3xl md:text-4xl font-black text-secondary uppercase mb-2">
+                        PACOTE COMPLETO
+                    </h2>
+                    <p class="text-xl text-gray-700 font-bold">
+                        Comece sem pagar nada!
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-4 mb-8">
+                    <div class="bg-white p-4 rounded-lg shadow border border-gray-100 text-center">
+                        <span class="block text-3xl mb-2">📋</span>
+                        <h3 class="font-bold text-gray-800">Avaliação</h3>
+                        <p class="text-green-600 font-bold text-lg">GRÁTIS</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow border border-gray-100 text-center">
+                        <span class="block text-3xl mb-2">🦷</span>
+                        <h3 class="font-bold text-gray-800">Instalação</h3>
+                        <p class="text-green-600 font-bold text-lg">GRÁTIS</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow border border-gray-100 text-center">
+                        <span class="block text-3xl mb-2">📸</span>
+                        <h3 class="font-bold text-gray-800">Doc. Básica</h3>
+                        <p class="text-green-600 font-bold text-lg">GRÁTIS</p>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="#" target="_blank"
+                        class="whatsapp-link inline-block bg-accent hover:bg-orange-600 text-white font-black text-lg py-3 px-10 rounded-full shadow-lg transition transform hover:-translate-y-1">
+                        QUERO APROVEITAR AGORA
+                    </a>
+                    <p class="mt-4 text-sm text-gray-600">
+                        *Você só paga a manutenção mensal do tratamento. Promoção por tempo limitado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos (Simples e Direto) -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading text-2xl font-bold text-center text-gray-800 mb-8">
+                Quem faz, recomenda!
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-1 text-yellow-400 mb-3">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"Achei que seria caro, mas me surpreendi. O atendimento é ótimo e o
+                        preço muito justo. Recomendo!"</p>
+                    <p class="font-bold text-secondary">Maria S.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-1 text-yellow-400 mb-3">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"Coloquei meu aparelho semana passada. Não paguei nada na instalação,
+                        foi verdade mesmo."</p>
+                    <p class="font-bold text-secondary">João P.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-1 text-yellow-400 mb-3">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"Consultório limpo e organizado. As meninas da recepção são uns
+                        amores."</p>
+                    <p class="font-bold text-secondary">Carla M.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Simplificado -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="font-heading text-2xl font-bold text-center text-gray-800 mb-8">Dúvidas?</h2>
+
+            <div class="space-y-3">
+                <details class="group bg-gray-50 p-4 rounded-lg cursor-pointer">
+                    <summary class="font-bold text-gray-700 list-none flex justify-between items-center">
+                        É verdade que não paga instalação?
+                        <span class="transition group-open:rotate-180">▼</span>
+                    </summary>
+                    <p class="text-gray-600 mt-4">Sim! A instalação, a avaliação e a documentação básica são gratuitas
+                        no nosso pacote promocional.</p>
+                </details>
+                <details class="group bg-gray-50 p-4 rounded-lg cursor-pointer">
+                    <summary class="font-bold text-gray-700 list-none flex justify-between items-center">
+                        Qual o valor da manutenção?
+                        <span class="transition group-open:rotate-180">▼</span>
+                    </summary>
+                    <p class="text-gray-600 mt-4">O valor é super acessível e cabe no seu bolso. Chame no WhatsApp que
+                        passamos os valores certinhos para você!</p>
+                </details>
+                <details class="group bg-gray-50 p-4 rounded-lg cursor-pointer">
+                    <summary class="font-bold text-gray-700 list-none flex justify-between items-center">
+                        Onde fica a clínica?
+                        <span class="transition group-open:rotate-180">▼</span>
+                    </summary>
+                    <p class="text-gray-600 mt-4">Estamos bem localizados aqui em {{CITY_NAME}}. Agende sua visita que
+                        te mandamos o endereço completo.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simples -->
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <h3 class="font-bold text-xl mb-4">Clínica Meu Sorriso</h3>
+            <a href="#" target="_blank"
+                class="whatsapp-link inline-block bg-green-600 text-white font-bold py-2 px-6 rounded-full hover:bg-green-500 transition">
+                Chamar no WhatsApp
+            </a>
+            <p class="mt-8 text-xs text-gray-600">&copy; <span id="current-year">2026</span> Todos os direitos
+                reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
